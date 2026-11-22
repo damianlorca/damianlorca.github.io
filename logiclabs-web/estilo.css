@@ -1,0 +1,30 @@
+:root{--ink:#14182B;--bg:#EEF2F5;--su:#2340A8;--bt:#E8742A;--st:#18204A;--rosa:#FF1F8E;--lima:#C8F135;--gris:#4A5268}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:"Bricolage Grotesque",system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55;
+ background-image:linear-gradient(#fff 2px,transparent 2px),linear-gradient(90deg,#fff 2px,transparent 2px);background-size:44px 44px}
+a{color:var(--su);text-underline-offset:3px}
+a:focus-visible{outline:3px solid #FFB800;outline-offset:2px}
+header,main,footer{max-width:720px;margin:0 auto;padding:0 20px}
+header{display:flex;align-items:center;gap:10px 16px;padding-top:22px;flex-wrap:wrap}
+header>a{white-space:nowrap;display:flex;align-items:center;gap:8px;color:var(--ink);text-decoration:none;font-weight:800;font-size:21px;letter-spacing:-.02em}
+header>a svg{width:30px;height:30px}
+nav{margin-left:auto;display:flex;gap:14px;font-size:14px;flex-wrap:wrap}
+nav a{color:var(--ink);font-weight:600;font-size:14px}
+main{padding-top:20px;padding-bottom:40px}
+.hoja{background:#fff;border:2px solid var(--ink);border-radius:16px;box-shadow:0 5px 0 var(--ink);padding:22px 24px;margin-bottom:22px}
+h1{font-size:clamp(34px,7vw,52px);line-height:1;letter-spacing:-.03em;margin:8px 0 14px}
+h2{font-size:21px;margin:26px 0 6px;letter-spacing:-.01em}
+h3{font-size:17px;margin:18px 0 4px}
+p,li{max-width:66ch}
+.lead{font-size:19px;color:var(--gris)}
+.juegos{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:18px 0 6px;padding:0;list-style:none}
+.juegos li{background:#fff;border:2px solid var(--ink);border-radius:16px;padding:14px;border-top:8px solid var(--c)}
+.juegos b{display:block;font-size:19px}
+.juegos span{color:var(--gris);font-size:15px}
+.nota{background:#FFF6D6;border:2px solid var(--ink);border-radius:14px;padding:10px 14px;font-size:15px}
+.meta{color:var(--gris);font-size:14px}
+table{border-collapse:collapse;width:100%;font-size:15px}
+td,th{border-top:1px solid #DDE2EA;padding:8px 6px;text-align:left;vertical-align:top}
+footer{padding-bottom:40px;color:var(--gris);font-size:14px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
